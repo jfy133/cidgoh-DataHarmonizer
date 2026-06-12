@@ -2,7 +2,7 @@
   "mixs": {
     "folder": "mixs-minas",
     "id": "https://w3id.org/mixs",
-    "version": "v6.2.0",
+    "version": "v6.3.0",
     "templates": {
       "MimsHostAssociatedAncient": {
         "name": "MimsHostAssociatedAncient",
