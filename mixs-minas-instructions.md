@@ -39,10 +39,17 @@ Some notes when attempting such a synchronisation:
 
 ### Schema preparation
 
-The instructions for adding a **single extension** to this repo's DataHarmonizer instance:
+> [!FAST MODE]
+> Two scripts can do these PARTS of these updates quickly from the root of this repository, assuming you have curl/yarn/linkml/linkml-toolkit available and configured:
+>
+> - `bash script/regenerate-minas.sh <version, e.g. 0.0.0 >`
+> - `bash script/redeploy-minas.sh
+>
+> Make sure to read messages!
+
+The instructions for adding a new MInAS schema to this repo's DataHarmonizer instance:
 
 - Change into `cd web/templates`
-- Delete most of the contents of `/web/templates/` (leave one example until the new templates are added, e.g. keep `mpox`, and also `new/` for reference)
 - Delete `menu.json`
 - Make a directory `mixs-minas/` and change into it
 - Add to directory a file `export.js` just containing `export default {};`
@@ -101,7 +108,7 @@ The instructions for adding a **single extension** to this repo's DataHarmonizer
   - Generate the DataHarmonizer compatible JSON with:
 
   ```bash
-  python ../../../script/linkml.py -i minas.yml
+  python ../../../script/linkml.py -i minas.yml -m mix-minas
   ```
 
   WARNING: despite the DataHarmonizer docs saying the `menu.json` will be updated - this does not happen.
