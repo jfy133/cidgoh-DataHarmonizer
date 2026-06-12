@@ -96,19 +96,19 @@ The instructions for adding a new MInAS schema to this repo's DataHarmonizer ins
 
   ```bash
   ## Update based on combinations from `minas-combinations.yml`
-  lmtk subset --schema mixs-minas.yaml --output minas.yml --classes MixsCompliantData,Ancient,MimsHostAssociatedAncient,MimsHumanAssociatedAncient,MimsHumanOralAncient,MimsHumanGutAncient,MimsHumanSkinAncient,MimsSedimentAncient,MimsSoilAncient,MimsPlantAncient
+  lmtk subset --schema mixs-minas.yaml --output schema.yml --classes MixsCompliantData,Ancient,MimsHostAssociatedAncient,MimsHumanAssociatedAncient,MimsHumanOralAncient,MimsHumanGutAncient,MimsHumanSkinAncient,MimsSedimentAncient,MimsSoilAncient,MimsPlantAncient
   ```
 
   - Inject the `dh_class` into the `schema.yaml` file with e.g.
 
   ```bash
-  sed -i '/^classes:/r dh_class_text.txt' minas.yml
+  sed -i '/^classes:/r dh_class_text.txt' schema.yml
   ```
 
   - Generate the DataHarmonizer compatible JSON with:
 
   ```bash
-  python ../../../script/linkml.py -i minas.yml -m mix-minas
+  python ../../../script/linkml.py -i schema.yml -m mix-minas
   ```
 
   WARNING: despite the DataHarmonizer docs saying the `menu.json` will be updated - this does not happen.

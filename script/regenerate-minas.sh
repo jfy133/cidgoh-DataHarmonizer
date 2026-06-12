@@ -20,7 +20,7 @@ workdir=$(pwd)
 echo '[regenerate-minas.sh] LOG: Cleaning up old version.'
 rm -r web/templates/menu.json
 rm -r web/templates/mixs-minas/mixs-minas.yaml
-rm -r web/templates/mixs-minas/minas.yml
+rm -r web/templates/mixs-minas/schema.yml
 rm -r web/templates/mixs-minas/schema.json
 
 echo '[regenerate-minas.sh] LOG: Downloading requested version of MInAS schema.'
@@ -28,13 +28,13 @@ curl -o $workdir/web/templates/mixs-minas/mixs-minas.yaml "https://raw.githubuse
 
 echo '[regenerate-minas.sh] LOG: Subsetting to MInAS combinations, and making DH compatible.'
 minas_combs=$(grep 'Ancient:' "$workdir"/web/templates/mixs-minas/mixs-minas.yaml | sed 's/://g' | xargs | tr ' ' ',')
-lmtk subset --schema "$workdir"/web/templates/mixs-minas/mixs-minas.yaml --output "$workdir"/web/templates/mixs-minas/minas.yml --classes MixsCompliantData,"$minas_combs"
-sed -i '/^classes:/r dh_class_text.txt' "$workdir/web/templates/mixs-minas/minas.yml"
+lmtk subset --schema "$workdir"/web/templates/mixs-minas/mixs-minas.yaml --output "$workdir"/web/templates/mixs-minas/schema.yml --classes MixsCompliantData,"$minas_combs"
+sed -i '/^classes:/r dh_class_text.txt' "$workdir/web/templates/mixs-minas/schema.yml"
 
 ## Generate the DataHarmonizer JSON version
 echo '[regenerate-minas.sh] LOG: Generating DataHarmonizer JSON from LinkML schema, and updating menu.json.'
 cd "$workdir"/web/templates/mixs-minas/ || exit
-python ../../../script/linkml.py -i $workdir/web/templates/mixs-minas/minas.yml -m mixs-minas
+python ../../../script/linkml.py -i $workdir/web/templates/mixs-minas/schema.yml -m mixs-minas
 sed -i "/[a-zA-Z]Ancient\"\,/{N;N;s/false/true/g}" ../menu.json
 cd "$workdir" || exit
 
