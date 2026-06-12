@@ -150,7 +150,7 @@ The instructions for adding a **single extension** to this repo's DataHarmonizer
 - Copy the new files into `docs/` to allow rendering on GitHub pages
 
   ```bash
-  cp -r web/dist/ docs/
+  cp -r web/dist/* docs/
   ```
 
 - Commit and push, checking the GitHub Actions workflow runs successfully
