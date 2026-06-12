@@ -18,7 +18,8 @@ rm -r docs/{dist-schemas/,images/,scripts/,templates/,index.html,main.html}
 ## Build
 yarn build:web
 cp -r web/dist/* docs/
+
+## Because apparently this is needed but doesn't get generated into `dist` by the `yarn build:web`
 cp -r web/templates/mixs-minas/schema.yml docs/templates/mixs-minas/schema.yml
 
-##
 echo '[redeploy-minas.sh] LOG: Done! Please commit and push!'
