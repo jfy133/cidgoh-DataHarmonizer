@@ -1,4 +1,56 @@
 {
+  "mixs-minas": {
+    "folder": "mixs-minas",
+    "id": "https://mixs-minas.org/",
+    "version": "0.7.0",
+    "templates": { 
+      "MimsHostAssociatedAncient": {
+        "name": "MimsHostAssociatedAncient",
+        "status": "published",
+        "display": true
+      },
+      "MimsHumanAssociatedAncient": {
+        "name": "MimsHumanAssociatedAncient",
+        "status": "published",
+        "display": true
+      },
+      "MimsHumanOralAncient": {
+        "name": "MimsHumanOralAncient",
+        "status": "published",
+        "display": true
+      },
+      "MimsHumanGutAncient": {
+        "name": "MimsHumanGutAncient",
+        "status": "published",
+        "display": true
+      },
+      "MimsHumanSkinAncient": {
+        "name": "MimsHumanSkinAncient",
+        "status": "published",
+        "display": true
+      },
+      "MimsSedimentAncient": {
+        "name": "MimsSedimentAncient",
+        "status": "published",
+        "display": true
+      },
+      "MimsSoilAncient": {
+        "name": "MimsSoilAncient",
+        "status": "published",
+        "display": true
+      },
+      "MimsPlantAssociatedAncient": {
+        "name": "MimsPlantAssociatedAncient",
+        "status": "published",
+        "display": true
+      },
+      "MimsSymbiontAssociatedAncient": {
+        "name": "MimsSymbiontAssociatedAncient",
+        "status": "published",
+        "display": true
+      }
+    }
+  },
   "CanCOGeN_Covid-19": {
     "folder": "canada_covid19",
     "id": "https://example.com/CanCOGeN_Covid-19",
@@ -6,7 +58,7 @@
     "templates": {
       "CanCOGeNCovid19": {
         "name": "CanCOGeNCovid19",
-        "display": true
+        "display": false
       }
     },
     "locales": [
@@ -21,7 +73,7 @@
     "templates": {
       "GISAID": {
         "name": "GISAID",
-        "display": true
+        "display": false
       }
     }
   },
@@ -32,7 +84,7 @@
     "templates": {
       "PHA4GE": {
         "name": "PHA4GE",
-        "display": true
+        "display": false
       }
     }
   },
@@ -43,7 +95,7 @@
     "templates": {
       "GRDISample": {
         "name": "GRDISample",
-        "display": true
+        "display": false
       },
       "GRDIIsolate": {
         "name": "GRDIIsolate",
@@ -66,7 +118,7 @@
     "templates": {
       "PHACDexa": {
         "name": "PHACDexa",
-        "display": true
+        "display": false
       }
     }
   },
@@ -77,7 +129,7 @@
     "templates": {
       "AMBR": {
         "name": "AMBR",
-        "display": true
+        "display": false
       }
     }
   },
@@ -88,7 +140,7 @@
     "templates": {
       "PathogenAgnostic": {
         "name": "PathogenAgnostic",
-        "display": true
+        "display": false
       }
     }
   },
@@ -99,7 +151,7 @@
     "templates": {
       "Influenza": {
         "name": "Influenza",
-        "display": true
+        "display": false
       }
     }
   },
@@ -110,12 +162,12 @@
     "templates": {
       "Mpox": {
         "name": "Mpox",
-        "display": true,
+        "display": false,
         "version": "7.5.5"
       },
       "MpoxInternational": {
         "name": "MpoxInternational",
-        "display": true,
+        "display": false,
         "version": "8.5.5"
       }
     }
@@ -127,17 +179,17 @@
     "templates": {
       "WastewaterSARS-CoV-2": {
         "name": "WastewaterSARS-CoV-2",
-        "display": true,
+        "display": false,
         "version": "4.2.2"
       },
       "WastewaterAMR": {
         "name": "WastewaterAMR",
-        "display": true,
+        "display": false,
         "version": "4.2.2"
       },
       "WastewaterPathogenAgnostic": {
         "name": "WastewaterPathogenAgnostic",
-        "display": true,
+        "display": false,
         "version": "4.2.2"
       }
     }
@@ -149,27 +201,27 @@
     "templates": {
       "HPAI": {
         "name": "HPAI",
-        "display": true,
+        "display": false,
         "version": "1.0.0"
       },
       "HPAIFood": {
         "name": "HPAIFood",
-        "display": true,
+        "display": false,
         "version": "1.0.0"
       },
       "HPAIWW": {
         "name": "HPAIWW",
-        "display": true,
+        "display": false,
         "version": "1.0.0"
       },
       "HPAIEnviro": {
         "name": "HPAIEnviro",
-        "display": true,
+        "display": false,
         "version": "1.0.0"
       },
       "HPAIHost": {
         "name": "HPAIHost",
-        "display": true,
+        "display": false,
         "version": "1.0.0"
       }
     }
@@ -181,7 +233,7 @@
     "templates": {
       "B2B2B": {
         "name": "B2B2B",
-        "display": true
+        "display": false
       }
     }
   },
@@ -192,7 +244,7 @@
     "templates": {
       "Schema": {
         "name": "Schema",
-        "display": true
+        "display": false
       },
       "Prefix": {
         "name": "Prefix",
@@ -238,7 +290,7 @@
     "templates": {
       "Resource": {
         "name": "Resource",
-        "display": true
+        "display": false
       },
       "Food": {
         "name": "Food",
@@ -301,27 +353,27 @@
       },
       "MiscEnvsInterface": {
         "name": "MiscEnvsInterface",
-        "display": true
+        "display": false
       },
       "PlantAssociatedInterface": {
         "name": "PlantAssociatedInterface",
-        "display": true
+        "display": false
       },
       "SedimentInterface": {
         "name": "SedimentInterface",
-        "display": true
+        "display": false
       },
       "SoilInterface": {
         "name": "SoilInterface",
-        "display": true
+        "display": false
       },
       "WastewaterSludgeInterface": {
         "name": "WastewaterSludgeInterface",
-        "display": true
+        "display": false
       },
       "WaterInterface": {
         "name": "WaterInterface",
-        "display": true
+        "display": false
       },
       "MetagenomeSequencingNonInterleavedDataInterface": {
         "name": "MetagenomeSequencingNonInterleavedDataInterface",
@@ -349,11 +401,11 @@
       },
       "SoilMixsInspiredMixin": {
         "name": "SoilMixsInspiredMixin",
-        "display": true
+        "display": false
       },
       "SampleData": {
         "name": "SampleData",
-        "display": true
+        "display": false
       },
       "GeneProduct": {
         "name": "GeneProduct",

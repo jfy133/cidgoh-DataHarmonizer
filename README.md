@@ -8,6 +8,12 @@ Watch Rhiannon Cameron and Damion Dooley describe this application on [YouTube](
 |---|---|---|
 |49+|34+|12+|
 
+## MInAS new template instructions
+
+See [MIxS MInAS instructions](mixs-minas-instructions.md) for instructions on how to add a new template to this fork of DataHarmonizer.
+
+## Original README
+
 ## Pathogen Genomics Templates
 
 Note that the **Pathogen Genomics Package** of DataHarmonizer templates, which includes Covid-19 and Monkeypox, is available now as a simpler stand-alone zip file at [https://github.com/cidgoh/pathogen-genomics-package](https://github.com/cidgoh/pathogen-genomics-package). This version does not require the use of the developer environment and can be run simply by loading the `index.html` or `main.html` files in your local web browser.

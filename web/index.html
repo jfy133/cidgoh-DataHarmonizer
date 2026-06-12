@@ -7,8 +7,58 @@
     <title>DataHarmonizer</title>
     <!--Ignore script 404 on dev server; this external import used in prod-->
     <script src="dist-schemas/schemas.js"></script>
+    <link rel="preconnect" href="https://fonts.bunny.net" />
+    <link
+      href="https://fonts.bunny.net/css?family=albert-sans:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700i,800,800i,900,900i"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <div
+      style="
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        font-family: 'Albert Sans';
+      "
+    >
+      <a href="https://mixs-minas.org"
+        ><img
+          style="padding-right: 10px; height: 80px"
+          src="https://github.com/MIxS-MInAS/MIxS-MInAS.github.io/raw/refs/heads/master/docs/assets/images/logos/minas-logo-full-name-flat.png"
+      /></a>
+      <div>
+        <h3 style="margin-top: 5px; margin-bottom: 5px">
+          <a href="https://mixs-minas.org/MInAS-DataHarmonizer"
+            >MInAS Feedback Interface</a
+          >
+        </h3>
+        <p style="margin-top: 5px; margin-bottom: 5px">
+          <i
+            >Powered by
+            <a href="https://github.com/cidgoh/DataHarmonizer">DataHarmonizer</a
+            >.</i
+          >
+          MInAS version: 0.7.0
+        </p>
+        <p></p>
+        <p style="margin-top: 5px; margin-bottom: 5px">
+          <b>Legend:</b>
+          <mark style="background-color: yellow">Required</mark>
+          <mark style="background-color: plum">Recommended</mark>
+          <mark style="background-color: lightgrey">Optional</mark>.
+          <b>To start:</b> Use 'Template' to select the most suitable
+          <a href="https://www.mixs-minas.org/schema/combinations/#examples"
+            >checklist combination</a
+          >
+          for your dataset. for your dataset. Use the
+          <a href="https://www.mixs-minas.org/drafts/selecter/"
+            >interactive selection wizard</a
+          >
+          to help.
+        </p>
+      </div>
+    </div>
     <div class="container-fluid" id="dh-layout">
       <div class="row mt-3" id="dh-layout-toolbar">
         <div class="col">
